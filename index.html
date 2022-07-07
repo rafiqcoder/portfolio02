@@ -1,37 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>RafiqCoder</title>
 </head>
+
 <body>
     <main id="main">
-        <section id="menu" class="menubar">
+
+        <!---=======================================================              SIDE MENU   START          =====================================================----->
+        <section id="menuBar" class="menu_bar">
             <nav class="navbar">
+                <a href="#home" class="logo"><img src="img/logo.png" alt=""></a>
                 <ul class="menu">
-                    <li class="list_item">Home</li>
-                    <li class="list_item">About Me</li>
-                    <li class="list_item">Portfoli</li>
-                    <li class="list_item">Resume</li>
-                    <li class="list_item">Service</li>
-                    <li class="list_item">Blog</li>
-                    <li class="list_item">Contact</li>
+                    <li class="list_item active"><a href="#home">Home</a></li>
+                    <li class="list_item"><a href="#">About Me</a></li>
+                    <li class="list_item"><a href="#">Portfoli</a></li>
+                    <li class="list_item"><a href="#">Resume</a></li>
+                    <li class="list_item"><a href="#">Service</a></li>
+                    <li class="list_item"><a href="#">Blog</a></li>
+                    <li class="list_item"><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </section>
+        <!--- ============    FINISHED ===========  ---->
+
+
+
+        <!---=======================================================               MAIN CONTENT  START          =====================================================----->
         <section class="content_area">
-            <h1>i'm <span>Md Rafiqul Islam</span> </h1>
-            <p>A Passionate Web Designer & Developer</p>
-            <ul>
-                <li class="social">fb</li>
-                <li class="social">twitter</li>
-                <li class="social">youtube</li>
-                <li class="social">linkedin</li>
-            </ul>
-            <button class="quote"></button>
+            <div class="hero_area_left">
+                <h1>i'm <br><span>Md Rafiqul Islam</span> </h1>
+                <p>A Passionate Web Designer & Developer</p>
+                <ul class="social">
+                    <li class="s_list_item">fb</li>
+                    <li class="s_list_item">twitter</li>
+                    <li class="s_list_item">youtube</li>
+                    <li class="s_list_item">linkedin</li>
+                </ul>
+                <div class="button_grp">
+                    <button class="quote_btn">Get Quote</button>
+                    <button class="about_btn">About</button>
+                </div>
+
+            </div>
+            <div class="imgArea">
+                <img src="img/Me.png" alt="Me">
+            </div>
         </section>
+        <!--- ============   CONTENT  FINISHED ===========  ---->
     </main>
 </body>
+
 </html>
