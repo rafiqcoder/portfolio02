@@ -5,11 +5,10 @@
 
 body {
     font-family: 'Raleway', 'Oswald';
-    width: 80vw;
-    padding-left: 20vw;
-    margin: auto;
+    width: 79vw;
+    margin-left: 20vw;
+    /* margin: auto; */
     z-index: -2;
-    cursor: none;
 }
 
 a {
@@ -31,11 +30,23 @@ h2 {
     line-height: 1.4;
     font-family: "Oswald";
     font-size: 30px;
+    padding: 10px 0;
+
+}
+h3 {
+    line-height: 1.4;
+    font-family: "Oswald";
+    font-size: 20px;
+}
+p{
+    color: #ccc;
+    font-size: 15px;
+    padding: 10px auto;
 }
 
 #main {
     width: 100%;
-    height: 100%;
+    height: auto;
     /* display: flex; */
     /* overflow: hidden; */
 
@@ -58,18 +69,28 @@ h2 {
 .menu_bar {
 
     position: fixed;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    width: 20vw;
-    height: 100vh;
-    background-color: #4B4189;
-    transition: width 0.2s;
-    box-sizing: border-box;
-    overflow: hidden;
-    box-shadow: 0 5px 50px 10px #803bff;
-    z-index: 0;
 
+    overflow: hidden;
+
+    top: 0;
+
+    left: 0;
+
+    width: 20vw;
+
+    height: 100vh;
+
+    background-color: #4B4189;
+
+    transition: width 0.2s;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 50px 10px #803bff;
+
+    z-index: 0;
 }
 
 
@@ -124,30 +145,57 @@ h2 {
 
 
 /*------------------ content Area  START -----------------*/
+/*------------------ Herro Area  START -----------------*/
 .content_area {
-    width: 80vw;
+    width: 79vw;
     height: 90vh;
+    height: auto;
+    overflow: hidden;
+    margin: 0 !important;
+}
+
+.hero_area {
+    width: 100%;
+    height: 90vh;
+
     padding: 5vh 0;
+
     padding-left: 0px;
+
     background-image: url(img/Bg.png);
+
     background-repeat: no-repeat;
+
     background-size: cover;
+
     background-attachment: fixed;
+
     /* background-position: right; */
+
     /* margin-left: auto; */
+
     display: flex;
+
     /* justify-content: center; */
+
     align-content: center;
+
     align-self: center;
+
     align-items: center;
+
     flex-direction: row;
+
     flex-wrap: nowrap;
+
     justify-content: center;
+
     z-index: -1;
 }
 
 .hero_area_left {
     width: 44%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -225,7 +273,7 @@ p.hoverE {
 /*----------------- content Area FINISHED -----------------*/
 
 .cursor {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 2rem;
@@ -237,13 +285,14 @@ p.hoverE {
     transition: all 0.05s ease-in-out;
     z-index: 1;
 }
+
 .cursorBig {
 
     width: 5.5rem;
     height: 5.5rem;
-    position: fixed;
+    position: absolute;
     top: 0;
-        left: 0;
+    left: 0;
     border-radius: 50%;
     border: 1px solid #fff;
     transform: translate(-50%, -50%);
@@ -251,28 +300,60 @@ p.hoverE {
     transition: all 0.06s ease-in-out;
     z-index: 1;
 }
-.cursorSmall{
-        width: 5px;
-        height: 5px;
-        position: fixed;
-        top: 0;
-            left: 0; 
-        background: #fff;
-        border-radius: 50%;
-        transform: translate(-50%, -50%);
-        pointer-events: none;
-        z-index: 1;
+
+.cursorSmall {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1;
 }
 
 .link-grow {
-    
+
     transform: scale(3);
     background: rgb(0, 195, 255);
     mix-blend-mode: color-burn;
     transform-origin: 75% 75%;
 }
+
 .link-grow2 {
     transform: scale(1.5);
     border: 1px solid rgba(255, 255, 255, 0.432);
     transform-origin: 150% 150%;
 }
+
+.about_main {
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    background: rgb(29, 24, 66);
+    color: #fff;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.right_social{}
+.Right_s_list{}
+.about_area{
+    display: flex; justify-content: space-between;
+align-items: center;
+align-content: center;
+align-self: center;
+}
+.about_img{
+    width: auto; height: 50%;
+}
+.aboutinfo{}
+.info_list{}
+.about_details{}
+.ftitle{}
+.about_t{}
+.abut_sub{}
+.abut_desc{}
+.abut_btn{}
