@@ -8,6 +8,8 @@ body {
     width: 80vw;
     padding-left: 20vw;
     margin: auto;
+    z-index: -2;
+    cursor: none;
 }
 
 a {
@@ -33,6 +35,7 @@ h2 {
 
 #main {
     width: 100%;
+    height: 100%;
     /* display: flex; */
     /* overflow: hidden; */
 
@@ -65,6 +68,7 @@ h2 {
     box-sizing: border-box;
     overflow: hidden;
     box-shadow: 0 5px 50px 10px #803bff;
+    z-index: 0;
 
 }
 
@@ -87,8 +91,10 @@ h2 {
     margin-top: 50px;
     margin-bottom: 20px;
 }
+
 .menu {
     padding-top: 20px;
+    z-index: -2;
 }
 
 
@@ -96,6 +102,7 @@ h2 {
     width: 90%;
     padding: 30px 0;
     padding-left: 10%;
+    z-index: -2;
 
 }
 
@@ -103,6 +110,7 @@ h2 {
     font-size: 18px;
     font-weight: bold;
     color: #fff;
+    z-index: 2;
 
 }
 
@@ -135,6 +143,7 @@ h2 {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
+    z-index: -1;
 }
 
 .hero_area_left {
@@ -145,15 +154,20 @@ h2 {
     text-align: left;
     padding-left: 10%;
     color: rgb(255, 255, 255);
-}
-.hero_area_left h1{
-    margin-bottom: 10px;
+    padding-bottom: 200px;
 }
 
+.hero_area_left h1 {
+    margin-bottom: 10px;
+    max-width: 400px;
+}
+
+.content_area {}
 
 .social {
     margin-top: 30px;
     display: flex;
+    max-width: 300px;
     margin-bottom: 30px;
 }
 
@@ -172,6 +186,7 @@ h2 {
     font-size: 18px;
     font-weight: 600;
 }
+
 .about_btn {
     width: 120px;
     height: 57px;
@@ -179,14 +194,85 @@ h2 {
     color: #fff;
     background: none;
     font-size: 18px;
-    font-weight: 600;;
+    font-weight: 600;
+    ;
     display: inline;
 
 
+}
+
+p.hoverE {
+    max-width: 400px;
+}
+
+.button_grp.hoverE {
+    max-width: 290px;
 }
 
 .imgArea {
     width: 50%;
 }
 
+.sticky {
+    position: sticky;
+    top: 0px;
+}
+
+.new {
+    padding-top: 200px;
+}
+
 /*----------------- content Area FINISHED -----------------*/
+
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.05s ease-in-out;
+    z-index: 1;
+}
+.cursorBig {
+
+    width: 5.5rem;
+    height: 5.5rem;
+    position: fixed;
+    top: 0;
+        left: 0;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.06s ease-in-out;
+    z-index: 1;
+}
+.cursorSmall{
+        width: 5px;
+        height: 5px;
+        position: fixed;
+        top: 0;
+            left: 0; 
+        background: #fff;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        z-index: 1;
+}
+
+.link-grow {
+    
+    transform: scale(3);
+    background: rgb(0, 195, 255);
+    mix-blend-mode: color-burn;
+    transform-origin: 75% 75%;
+}
+.link-grow2 {
+    transform: scale(1.5);
+    border: 1px solid rgba(255, 255, 255, 0.432);
+    transform-origin: 150% 150%;
+}
